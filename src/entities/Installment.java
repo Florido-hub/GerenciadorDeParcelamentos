@@ -1,28 +1,28 @@
 package entities;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Installment {
 
     private static DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 
-    private LocalDateTime dueDate;
+    private LocalDate dueDate;
     private Double amount;
 
     public Installment() {
     }
 
-    public Installment(LocalDateTime dueDate, Double amount) {
+    public Installment(LocalDate dueDate, Double amount) {
         this.dueDate = dueDate;
         this.amount = amount;
     }
 
-    public LocalDateTime getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(LocalDateTime dueDate) {
+    public void setDueDate(LocalDate dueDate) {
         this.dueDate = dueDate;
     }
 
